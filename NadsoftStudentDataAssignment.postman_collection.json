@@ -1,0 +1,190 @@
+{
+	"info": {
+		"_postman_id": "db3e0c0c-045f-485c-9516-40eebaf42450",
+		"name": "NadsoftStudentDataAssignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24629808",
+		"_collection_link": "https://proxy5.postman.co/workspace/Coursera~261bdff3-8e5d-443c-a7ea-faf46c08357a/collection/24629808-db3e0c0c-045f-485c-9516-40eebaf42450?action=share&source=collection_link&creator=24629808"
+	},
+	"item": [
+		{
+			"name": "getAllStudent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/studentData/getAllStudent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"studentData",
+						"getAllStudent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getStudentById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/studentData/getStudentById/11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"studentData",
+						"getStudentById",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createNewStudent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\": \"Rahul\",\r\n    \"last_name\": \"Kumavat\",\r\n    \"mobile_no\": \"+911234123409\",\r\n    \"city\": \"Lonavala\",\r\n    \"email_id\":\"rahul09@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/studentData/createNewStudent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"studentData",
+						"createNewStudent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateStudentData",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"first_name\": \"Rahul\",\r\n    \"last_name\": \"Mehta\",\r\n    \"mobile_no\": \"+911234123409\",\r\n    \"city\": \"Lonavala\",\r\n    \"email_id\":\"rahul09@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/studentData/updateStudentData/15",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"studentData",
+						"updateStudentData",
+						"15"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteStudentData",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/studentData/deleteStudentData/14",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"studentData",
+						"deleteStudentData",
+						"14"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getStudentMarksById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/studentData/getStudentMarks/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"studentData",
+						"getStudentMarks",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addStudentMarksById",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"math\": \"11\",\r\n    \"science\": 11,\r\n    \"gk\": 11,\r\n    \"marathi\": 11,\r\n    \"english\": 11,\r\n    \"hindi\": 11\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/studentData/addStudentMarks/16",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"studentData",
+						"addStudentMarks",
+						"16"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

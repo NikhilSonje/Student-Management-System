@@ -1,0 +1,24 @@
+Student Management System
+
+The Student Management System application is designed to efficiently manage student records.
+It allows an administrator to add, view, update, delete, and manage student data along with their academic marks.
+
+Stack Used In Project
+Backend: Node.js, Express
+Database: MySQL with Sequelize ORM
+Validation: Joi 
+Alerts & Notifications: SweetAlert2 (Swal)
+API Testing: Postman / Curl
+Port Configuration:
+Frontend: 3001
+Backend: 3000
+Frontend: React.js, Axios, Bootstrap / Material UI
+
+On backend 7 endpoints
+getAllStudent
+getStudentById
+createNewStudent
+updateStudentData
+deleteStudentData
+getStudentMarksById
+addStudentMarksById
